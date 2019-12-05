@@ -368,7 +368,7 @@ template {
 
 @font-face {
   font-family: 'Futura DemiC';
-  src: url("../fonts/Futura/FuturaDemiC.woff") format("woff"), url("../fonts/Futura/FuturaDemiC.woff2") format("woff2");
+  src: url("/fonts/Futura/FuturaDemiC.woff") format("woff"), url("/fonts/Futura/FuturaDemiC.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: wrap;
@@ -409,6 +409,46 @@ template {
 
 .contacts__phone {
   margin-right: 45px;
+}
+
+.hero {
+  position: relative;
+  background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
+  height: 100vh;
+  color: #ffffff;
+}
+
+.hero__instagram {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 80px;
+  height: 100%;
+}
+
+.instagram {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #131313;
+}
+
+.instagram__link {
+  text-transform: uppercase;
+  color: #E3B873;
+  text-decoration: none;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.title {
+  margin: 0;
 }
 
 body {
