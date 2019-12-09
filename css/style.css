@@ -352,6 +352,7 @@ template {
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
+  font-size: 0.93rem;
 }
 
 .button:hover {
@@ -385,9 +386,13 @@ template {
           box-sizing: border-box;
 }
 
+html {
+  font-size: 14px;
+}
+
 body {
   font-family: 'Futura Book', sans-serif;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 .section-title {
@@ -414,6 +419,61 @@ body {
   height: 2px;
   background-color: #E3B873;
   margin: 0px 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 12px;
+  }
+  .nav__link {
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .nav {
+    display: none;
+  }
+  .hero__instagram {
+    display: none;
+  }
+  .hero__content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .contacts__phone {
+    margin-right: 0;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .contacts__button {
+    display: none;
+  }
+  .title {
+    font-size: 1.64rem;
+  }
+  .hero__scroll-down {
+    display: none;
+  }
+  .hero__content {
+    max-width: 22.86rem;
+  }
+  .hero__text {
+    font-size: 1.28rem;
+  }
+  .hero__button {
+    display: block;
+    min-width: 22.86rem;
+    margin-bottom: 1.85rem;
+  }
+}
+
+@media screen and (max-height: 530px) {
+  .hero__scroll-down {
+    display: none;
+  }
 }
 
 @font-face {
@@ -459,16 +519,16 @@ body {
   text-transform: uppercase;
 }
 
-.nav__link {
+.nav__item {
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
-  margin-right: 40px;
+  margin-right: 2.85rem;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
-.nav__link:hover {
+.nav__item:hover {
   color: #E3B873;
 }
 
@@ -510,11 +570,12 @@ body {
 
 .hero__content {
   position: relative;
-  max-width: 670px;
+  max-width: 47.85rem;
+  margin-left: 4.28rem;
 }
 
 .hero__text {
-  font-size: 22px;
+  font-size: 1.57rem;
   max-width: 504px;
 }
 
@@ -526,7 +587,7 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  max-width: 80px;
+  max-width: 5.7rem;
   height: 100%;
 }
 
@@ -543,8 +604,8 @@ body {
           justify-content: center;
   left: 0;
   bottom: 0;
-  min-width: 247px;
-  min-height: 97px;
+  min-width: 17.64rem;
+  min-height: 6.92rem;
   background-color: #131313;
   text-transform: uppercase;
   text-decoration: none;
@@ -601,7 +662,7 @@ body {
   margin: 0;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 2.857rem;
 }
 
 .title--primary {
