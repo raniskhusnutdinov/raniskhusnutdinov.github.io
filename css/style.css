@@ -482,7 +482,7 @@ body {
 }
 
 .contacts__phone {
-  margin-right: 45px;
+  margin-right: 3,21rem;
 }
 
 .hero {
@@ -616,7 +616,7 @@ body {
 
 @media screen and (max-width: 1200px) {
   html {
-    font-size: 12px;
+    font-size: 10px;
   }
   .nav__link {
     margin-right: 1rem;
