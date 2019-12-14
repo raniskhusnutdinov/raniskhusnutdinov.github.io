@@ -6,15 +6,15 @@ html
 body
   font-family: 'Futura Book', sans-serif
   font-size: 1rem
-.section
-  padding: 60px 0
 img
   max-width: 100%
 .section 
+  padding: 60px 0
   &-title
     text-align: center
-    text-transform: uppercase
+    &__heading
     font-family: 'Yeseva One', cursive
+    text-transform: uppercase
     &__image
       display: flex
       justify-content: center
@@ -25,3 +25,10 @@ img
         height: 2px
         background-color: $primary
         margin: 0px 10px
+    &__description
+      font-family: 'Futura Book', sans-serif
+      margin: auto
+      margin-top: 1.64rem
+      font-size: 1.07rem
+      line-height: 135.84%
+      max-width: 48rem
