@@ -343,7 +343,7 @@ template {
 
 .container {
   width: 85%;
-  max-width: 1256px;
+  max-width: 1438px;
   margin: auto;
 }
 
@@ -430,7 +430,6 @@ img {
 }
 
 .section-title__description {
-  font-family: 'Futura Book', sans-serif;
   margin: auto;
   margin-top: 1.64rem;
   font-size: 1.07rem;
@@ -461,7 +460,7 @@ img {
   width: 100%;
   z-index: 99;
   background-color: #131313;
-  padding: 24px 0;
+  padding: 37px 0;
 }
 
 .menu {
@@ -681,7 +680,6 @@ img {
 
 .card__pricetag {
   position: absolute;
-  left: 0;
   bottom: -1.79rem;
   font-size: 1.29rem;
   font-family: 'Yeseva One', cursive;
@@ -717,15 +715,20 @@ img {
   .types__card {
     margin-bottom: 5rem;
   }
+  .design {
+    background-color: #131313;
+  }
+  .design__section-title {
+    color: #ffffff;
+  }
+  .design__card {
+    margin-bottom: 5.7rem;
+  }
   .card__text {
     margin-left: 0;
   }
-  background-color: #131313;
-  __section-title {
-    color: #ffffff;
-  }
-  __card {
-    margin-bottom: 5.7rem;
+  .card__pricetag {
+    left: 0;
   }
   .nav {
     display: none;
