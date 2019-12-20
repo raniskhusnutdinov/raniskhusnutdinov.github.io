@@ -405,6 +405,9 @@ img {
 
 .section-title {
   text-align: center;
+}
+
+.section-title__heading {
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
 }
@@ -430,11 +433,11 @@ img {
 }
 
 .section-title__description {
+  max-width: 53rem;
   margin: auto;
   margin-top: 1.64rem;
-  font-size: 1.07rem;
+  font-size: 1.43rem;
   line-height: 135.84%;
-  max-width: 48rem;
 }
 
 @font-face {
@@ -495,6 +498,7 @@ img {
 
 .phone {
   color: #E3B873;
+  padding-right: 3.21rem;
 }
 
 .contacts__phone {
@@ -689,8 +693,8 @@ img {
   padding: 1.214rem 2.6rem;
 }
 
-.desing__section-title {
-  margin-bottom: 2.78rem;
+.design__section-title {
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 1200px) {
@@ -757,31 +761,18 @@ img {
     display: none;
   }
   .hero__content {
-    max-width: 22.86rem;
+    max-width: 24.14rem;
   }
   .hero__text {
     font-size: 1.28rem;
   }
   .hero__button {
     display: block;
-    min-width: 22.86rem;
+    min-width: 24.14rem;
     margin-bottom: 1.85rem;
   }
-}
-
-@media screen and (max-height: 530px) {
-  .hero__scroll-down {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 570px) {
-  .section-title__decription {
-    margin: auto;
-    margin-top: 1.64rem;
-    font-size: 1.07rem;
-    line-height: 135.84%;
-    max-width: 52rem;
+  .hero .section__decription {
+    max-width: 21.86rem;
   }
   .row {
     -webkit-box-orient: vertical;
@@ -792,13 +783,17 @@ img {
         -ms-flex-align: center;
             align-items: center;
   }
+  .types__card {
+    margin-bottom: 4,29rem;
+  }
+  .card__text {
+    margin-left: 0;
+  }
 }
 
-.types__card {
-  margin-bottom: 4,29rem;
-}
-
-.card__text {
-  margin-left: 0;
+@media screen and (max-height: 530px) {
+  .hero__scroll-down {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
