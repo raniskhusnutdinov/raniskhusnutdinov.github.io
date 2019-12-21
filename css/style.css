@@ -544,6 +544,18 @@ img {
   text-transform: uppercase;
 }
 
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .nav__item {
   text-decoration: none;
   color: #ffffff;
@@ -562,8 +574,16 @@ img {
   padding-right: 3.21rem;
 }
 
-.contacts__phone {
-  margin-right: 3,21rem;
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hero {
@@ -759,6 +779,8 @@ img {
 }
 
 .modal {
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   z-index: 199;
   left: 0;
@@ -776,6 +798,11 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.modal--visible {
+  opacity: 1;
+  visibility: visible;
 }
 
 .modal__dialog {
@@ -838,6 +865,9 @@ img {
   }
   .nav__link {
     margin-right: 1rem;
+  }
+  .contacts__button {
+    margin: 0;
   }
 }
 
