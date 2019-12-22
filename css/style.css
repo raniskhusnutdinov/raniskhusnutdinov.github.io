@@ -374,6 +374,7 @@ template {
   border-radius: 2px;
   text-transform: uppercase;
   font-size: 0.93rem;
+  outline: none;
 }
 
 .button:hover {
@@ -417,6 +418,7 @@ template {
   font-size: 1.285rem;
   color: #ffffff;
   padding: 0.5rem 0;
+  outline: none;
 }
 
 .input::-webkit-input-placeholder {
@@ -812,6 +814,10 @@ img {
   margin-bottom: 0.64rem;
 }
 
+.swiper-slide-image {
+  margin-top: -14.5rem;
+}
+
 .swiper-pagination-bullet {
   background-color: rgba(255, 255, 255, 0.3);
 }
@@ -1021,6 +1027,17 @@ img {
   }
   .hero__content {
     margin-left: 0;
+  }
+  .swiper-slide-image {
+    margin-top: 0;
+  }
+  .mobile-order-top {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .col-50 {
+    width: 100%;
   }
 }
 
