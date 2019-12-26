@@ -67,9 +67,9 @@ $(document).ready(function () {
           minlength: "Имя не короче двух букв",
           maxlength: "Имя не длиннее 15-ти букв"
         },
-        userPhone: "Телефон обязателен",
+        userPhone:  "Телефон обязателен",
         userEmail: {
-          required: "Обязательно укажите email",
+          required: "Заполните поле",
           email: "Введите в формате: name@domain.com"
         }
       }

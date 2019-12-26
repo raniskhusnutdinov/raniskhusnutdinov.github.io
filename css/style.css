@@ -1310,6 +1310,22 @@ img {
   .card__text {
     margin-left: 0;
   }
+  .footer {
+    background: #131313;
+  }
+  .footer__wrap {
+    background-color: #131313;
+  }
+  .footer__menu {
+    display: none;
+  }
+  .footer__form {
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media screen and (max-height: 530px) {
