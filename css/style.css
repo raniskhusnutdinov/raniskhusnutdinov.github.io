@@ -360,8 +360,8 @@ template {
 }
 
 .col-30 {
-  -ms-flex-preferred-size: 32%;
-      flex-basis: 32%;
+  -ms-flex-preferred-size: 28%;
+      flex-basis: 28%;
 }
 
 .col-50 {
@@ -603,7 +603,7 @@ img {
   width: 100%;
   z-index: 99;
   background-color: #131313;
-  padding: 37px 0;
+  padding: 37px 0 30px;
 }
 
 .menu {
@@ -948,6 +948,7 @@ img {
 }
 
 .control__label {
+  padding-bottom: 0.5rem;
   margin-bottom: -7px;
 }
 
@@ -965,6 +966,10 @@ img {
 
 .control__button {
   padding: 1.285rem 4.78rem;
+}
+
+.control__input {
+  color: #131313;
 }
 
 .video__play {
@@ -1088,7 +1093,7 @@ img {
 .footer__menu {
   background-color: #131313;
   padding: 4.285rem 0;
-  margin-top: 4.64rem;
+  margin-top: 3.64rem;
   position: absolute;
   left: 0;
   width: 100%;
@@ -1101,14 +1106,19 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 3.71rem;
   margin-bottom: 1.85rem;
 }
 
 .footer__adress__title {
+  margin: auto;
+  text-align: center;
   max-width: 42.71rem;
   font-size: 1.42rem;
-  text-align: center;
 }
 
 .footer__social {
@@ -1118,7 +1128,8 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 3.35rem;
+  margin-top: 1.64rem;
+  margin-bottom: 2rem;
 }
 
 .footer__social__icon {
@@ -1295,6 +1306,7 @@ img {
     color: rgba(255, 255, 255, 0.8);
   }
   .control__policy__label {
+    color: #ffffff;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -1348,18 +1360,39 @@ img {
   .footer {
     background: #131313;
   }
-  .footer__wrap {
-    background-color: #131313;
-  }
   .footer__menu {
     display: none;
   }
-  .footer__form {
-    padding: 0;
+  .footer__wrap {
+    background-color: #131313;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .footer__form {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__adress__title {
+    margin-top: 4rem;
+  }
+  .footer__map {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .footer__button {
+    padding: 1.42rem 13.85rem;
   }
 }
 

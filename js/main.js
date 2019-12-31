@@ -74,8 +74,57 @@ $(document).ready(function () {
         }
       }
   });
+
+   //Валидация формы//
+  $('.control__form').validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      // строчное правило
+      userNameControl: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhoneControl: "required",
+    },
+      messages: {
+        userNameControl: {
+          required: "Имя обязательно",
+          minlength: "Имя не короче двух букв",
+          maxlength: "Имя не длиннее 15-ти букв"
+        },
+        userPhoneControl: "Телефон обязателен"
+      },
+    
+  });
   
   //маска для телефона
   $('[type=tel]').mask('+7(000) 000 00 00', {placeholder: "+7(___) ___-__-__"});
+
+  $('.footer__form').validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      // строчное правило
+      userNameFooter: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhoneFooter: "required",
+      userQuestionFooter: "required",
+    },
+      messages: {  
+        userNameFooter: {
+          required: "Имя обязательно",
+          minlength: "Имя не короче двух букв",
+          maxlength: "Имя не длиннее 15-ти букв"
+        },
+        userPhoneFooter: "Телефон обязателен",
+        userQuestionFooter: "Введите вопрос"
+      },
+    
+  });
 
 });
