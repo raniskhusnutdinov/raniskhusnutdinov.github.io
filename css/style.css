@@ -1,4 +1,4 @@
-﻿/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -472,8 +472,10 @@ template {
           justify-content: center;
 }
 
-.invalid {
+em.invalid {
   color: tomato;
+  position: absolute;
+  margin-top: 55px;
 }
 
 input.invalid {
@@ -1208,6 +1210,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
   margin-bottom: 3.428rem;
 }
 

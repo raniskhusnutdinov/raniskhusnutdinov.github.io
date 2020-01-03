@@ -33,7 +33,7 @@
   //Валидация формы//
   $('.modal__form').validate({
     errorClass: "invalid",
-    errorElement: "div",
+    errorElement: "em",
     rules: {
       // строчное правило
       userName: {
@@ -65,7 +65,7 @@
    //Валидация формы//
   $('.control__form').validate({
     errorClass: "invalid",
-    errorElement: "div",
+    errorElement: "em",
     rules: {
       // строчное правило
       userNameControl: {
@@ -91,7 +91,7 @@
 
   $('.footer__form').validate({
     errorClass: "invalid",
-    errorElement: "div",
+    errorElement: "em",
     rules: {
       // строчное правило
       userNameFooter: {
