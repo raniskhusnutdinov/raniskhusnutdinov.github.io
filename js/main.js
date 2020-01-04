@@ -30,8 +30,9 @@
   bullets.css('left', prev.width() + 10)
 
   new WOW().init();
+  
   //Валидация формы//
-  $('.modal__form').validate({
+  $('.modal__form',).validate({
     errorClass: "invalid",
     errorElement: "em",
     rules: {
@@ -67,21 +68,21 @@
     errorClass: "invalid",
     errorElement: "em",
     rules: {
-      // строчное правило
-      userNameControl: {
+      // блочное правило
+      userName: {
         required: true,
         minlength: 2,
         maxlength: 15
       },
-      userPhoneControl: "required",
+      userPhone: "required",
     },
       messages: {
-        userNameControl: {
+        userName: {
           required: "Имя обязательно",
           minlength: "Имя не короче двух букв",
           maxlength: "Имя не длиннее 15-ти букв"
         },
-        userPhoneControl: "Телефон обязателен"
+        userPhone: "Телефон обязателен"
       },
     
   });
@@ -94,27 +95,25 @@
     errorElement: "em",
     rules: {
       // строчное правило
-      userNameFooter: {
+      userName: {
         required: true,
         minlength: 2,
         maxlength: 15
       },
-      userPhoneFooter: "required",
-      userQuestionFooter: "required",
+      userPhone: "required",
+      userQuestion: "required",
     },
       messages: {  
-        userNameFooter: {
+        userName: {
           required: "Имя обязательно",
           minlength: "Имя не короче двух букв",
           maxlength: "Имя не длиннее 15-ти букв"
         },
-        userPhoneFooter: "Телефон обязателен",
-        userQuestionFooter: "Введите вопрос"
+        userPhone: "Телефон обязателен",
+        userQuestion: "Введите вопрос"
       },
     
   });
 
 });
 
-function newFunction() {
-}

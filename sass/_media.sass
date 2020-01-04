@@ -7,7 +7,7 @@
   .contacts
     &__button
       margin: 0
-@media screen and ( max-width: 992px )
+@media screen and ( max-width: 940px )
   .row
     flex-direction: column
     align-items: center
@@ -97,6 +97,7 @@
       background-color: $dark
       display: flex
       flex-direction: column
+      padding: 0
     &__form
       padding: 0
       display: flex
@@ -107,7 +108,8 @@
     &__map
       order: -1
     &__button
-      padding: 1.42rem 13.85rem
+      padding: 1.42rem
+      min-width: 100%
 @media screen and ( max-height: 530px )
   .hero
     &__scroll-down
