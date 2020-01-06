@@ -368,6 +368,11 @@ template {
   width: 50%;
 }
 
+.col-31 {
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+}
+
 .button {
   padding: 13px 20px;
   border: none;
@@ -578,8 +583,19 @@ img {
   max-width: 53rem;
   margin: auto;
   margin-top: 1.64rem;
+  text-align: center;
   font-size: 1.43rem;
   line-height: 135.84%;
+}
+
+.section-title__about {
+  max-width: 32rem;
+  margin: auto;
+  margin-top: 1.8rem;
+  margin-bottom: 5.28rem;
+  font-family: 'Futura Book', sans-serif;
+  font-size: 1.43rem;
+  line-height: 2rem;
 }
 
 @font-face {
@@ -986,7 +1002,7 @@ img {
 .card__text {
   position: relative;
   max-width: 23.6rem;
-  margin: 0 auto;
+  margin: 0 5%;
   margin-top: -9.3rem;
   padding: 1.79rem 2.14rem;
   background-color: #fff;
@@ -1019,10 +1035,6 @@ img {
   background-color: #E3B873;
   color: #ffffff;
   padding: 1.214rem 2.6rem;
-}
-
-.design {
-  padding-bottom: 30rem;
 }
 
 .design__section-title {
@@ -1238,6 +1250,85 @@ img {
 .modal__button {
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+.team {
+  padding-bottom: 30rem;
+}
+
+.team__section-title__heading {
+  margin-bottom: 1rem;
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.42rem;
+  line-height: 2rem;
+}
+
+.team__description {
+  margin-top: 5.14rem;
+  max-width: 40.57rem;
+}
+
+.team__description::before {
+  content: '';
+  display: block;
+  margin: auto;
+  margin-bottom: 2.5rem;
+  width: 55px;
+  height: 2px;
+  background-color: #E3B873;
+  border-radius: 30px;
+}
+
+.team__card {
+  max-width: 72rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+}
+
+.team__card__text {
+  margin: auto;
+  margin-right: 3rem;
+  max-width: 15.42rem;
+}
+
+.team__card__title {
+  text-align: center;
+}
+
+.team__card__list {
+  text-align: center;
+}
+
+.team__card__text {
+  max-width: 16.64rem;
+  margin-top: -6.3rem;
+  padding: 2rem 1.42rem;
+}
+
+.team__experience {
+  position: absolute;
+  bottom: -1.79rem;
+  font-size: 0.9rem;
+  font-family: 'Yeseva One', cursive;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  color: #ffffff;
+  padding: 1rem 2.9rem;
+  width: 100%;
+  left: 0;
+}
+
+.col-31 {
+  margin: 0 3.1rem;
 }
 
 @media screen and (max-width: 1200px) {
