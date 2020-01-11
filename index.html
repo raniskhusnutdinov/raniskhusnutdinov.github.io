@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcup icon" type="image/svg" href="img/pencil.png">
 
     <title>Design</title>
 </head>
@@ -17,16 +18,16 @@
         <div class="container">
             <div class="menu">
                 <div class="logo menu__logo wow fadeInLeft">
-                    Repair Design Project
+                    <a class="logo" href="#up">Repair Design Project</a>
                 </div>
                 <!-- /.logo -->
                 <nav class="nav nav__menu wow fadeInUp">
                     <a href="#" class="nav__item">Главная</a>
-                    <a href="#" class="nav__item">Проекты</a>
-                    <a href="#" class="nav__item">Замер</a>
-                    <a href="#" class="nav__item">Команда</a>
-                    <a href="#" class="nav__item">Отзывы</a>
-                    <a href="#" class="nav__item">Контакты</a> 
+                    <a href="#projects" class="nav__item">Проекты</a>
+                    <a href="#projects" class="nav__item">Замер</a>
+                    <a href="#design" class="nav__item">Команда</a>
+                    <a href="#down" class="nav__item">Отзывы</a>
+                    <a href="#adress" class="nav__item">Контакты</a> 
                 </nav>
                 <div class="contacts menu__contacts">
                     <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
@@ -41,7 +42,7 @@
     </header>
     <div class="main">
         <section class="hero">
-            <div class="instagram hero__instagram">
+            <div class="instagram hero__instagram"  id="up">
                 <a href="#" class="instagram__link">Instagram</a>
             </div>
             
@@ -55,10 +56,10 @@
             <!-- /.hero__content -->
             </div>
                 <!-- /.container -->
-            <a href="#" class="hero__scroll-down wow bounce"data-wow-delay = "4s" data-wow-duration = "2s">листайте вниз</a>
+            <a href="#down" class="hero__scroll-down wow bounce" data-wow-delay = "4s" data-wow-duration = "2s">листайте вниз</a>
         </section>
         <!-- /.hero -->
-    <section class="section section--dark projects">
+    <section class="section section--dark projects" id="projects">
         <div class="container">
             <div class="section-title section-title--left">
                         <h2 class="section-title__heading section-title__heading--primary">Завершенные <span class="section-title__word">проекты</span></h2>
@@ -201,7 +202,8 @@
                 <!-- /.section-title__image -->
             </div>
             <!-- /.section-title -->
-            <div class="control__video video">
+            <div class="control__video video" id="player">
+                    <script src="https://www.youtube.com/iframe_api"></script>
                 <img src="img/play-icon.svg" alt="play-icon" class="video__play">
             </div>
             <!-- /.control__video video -->
@@ -222,8 +224,8 @@
                 <!-- /.input-group -->
                 <button class="button button--primary control__button">отправить</button> <!-- /.button button-primary button__control -->
                 <div class="policy control__policy">
-                    <input type="checkbox" name="policy__checkbox" id="policy__checkbox" class="policy__checkbox" checked>
-                    <label for="policy__checkbox" class="policy__label control__policy__label">Я соглашаюсь с оработкой данных</label>
+                    <input type="checkbox" name="policyCheckbox" id="policy__checkbox-control" class="policy__checkbox" checked>
+                    <label for="policy__checkbox-control" class="policy__label control__policy__label">Я соглашаюсь с обработкой данных</label>
                 </div>
                 <!-- /.policy -->
             </form>
@@ -347,7 +349,7 @@
         </div>
     </section>
     <!-- /.section types -->
-    <section class="section design">
+    <section class="section design" id="design">
         <div class="container">
             <div class="section-title design__section-title">
                 <h2 class="section-title__heading">Дизайн проект</h2>
@@ -461,91 +463,6 @@
         </div>
     </section>
     <!-- /.section design -->
-    <section class="section team">
-        <div class="container">
-            <div class="section-title design__section-title">
-                <h2 class="section-title__heading">Наша команда</h2>
-                <!-- /.section-title__heading -->
-                <div class="section-title__image">
-                    <img src="img/team/team.svg" alt="video">
-                </div>
-                <!-- /.section-title__image -->
-                <div class="section-title__about">
-                    Наша команда помогла стать счастливее более чем 500 семьям, и мы не собираемся останавливаться
-                </div>
-                <!-- /.section-title__about -->
-            </div>
-            <!-- /.section-title --> 
-            <div class="row">
-                <!-- <div class="team__card"> -->
-                    <div class="col-31">
-                    <div class="card design__card">
-                        <img src="img/team/image-team1.jpg" alt="" class="team__image">
-                        <div class="card__text team__card__text wow fadeInLeft" data-wow-delay = "0.3s">
-                            <h3 class="card__title team__card__title">Алексей Колмаков</h3>
-                            <!-- /.card__title -->
-                            <div class="card__list team__card__list">
-                                Проектный менеджер
-                            </div>
-                            <!-- /.card__list -->
-                            <strong class="team__experience">
-                                опыт работы 8 лет
-                            </strong> <!-- /.card__pricetag -->
-                        </div>
-                        <!-- /.card__text -->
-                    </div>
-                    <!-- /.card -->
-                </div>
-                <!-- /.col-30 -->
-                <div class="col-31">
-                    <div class="card types__card">
-                        <img src="img/team/image-team2.jpg" alt="" class="design__image">
-                        <div class="card__text team__card__text wow fadeInLeft" data-wow-delay = "0.5s">
-                            <h3 class="card__title team__card__title">Алиса Сухорукова</h3>
-                            <!-- /.card__title -->
-                            <div class="card__list team__card__list">
-                                Дизайнер
-                            </div>
-                            <!-- /.card__list -->
-                            <strong class="team__experience">
-                                опыт работы 6 лет
-                            </strong> <!-- /.card__pricetag -->
-                        </div>
-                        <!-- /.card__text -->
-                    </div>
-                    <!-- /.card -->
-                </div>
-                <!-- /.col-30 -->
-                <div class="col-31">
-                    <div class="card types__card">
-                        <img src="img/team/image-team3.jpg" alt="" class="design__image">
-                        <div class="card__text team__card__text wow fadeInLeft" data-wow-delay = "0.7s">
-                            <h3 class="card__title team__card__title">Давид Волынев</h3>
-                            <!-- /.card__title -->
-                            <div class="card__list team__card__list">
-                                Бригадир
-                            </div>
-                            <!-- /.card__list -->
-                            <strong class="team__experience">
-                                опыт работы 7 лет
-                            </strong> <!-- /.card__pricetag -->
-                        </div>
-                        <!-- /.card__text -->
-                    </div>
-                    <!-- /.card -->
-                </div>
-                <!-- /.col-30 -->
-                <!-- </div> -->
-                <!-- /.team__card -->
-            </div>
-            <!-- /.row -->  
-                <p class="section-title__description team__description">Каждый сотрудник нашей компании является квалифицированным штатным специалистом с опытом работы от 6 лет. У нас нет гастарбайтеров, каждый сотрудник выполняет работу, соответствующую его специальностит</p>
-        </div>
-    </section>
-    <!-- /.section design -->
-
-</div>
-    <!-- /.main -->
     <footer class="footer section section--dark">
         <div class="container">
             <div class="footer__wrap">
@@ -563,11 +480,11 @@
                 <!-- /.input-group footer__input-group -->
                 <div class="input-group footer__input-group footer__input-group--full-width">
                     <label for="user-question" class="label form__label label--light">Вопрос</label>
-                    <input type="text" name="userQuestion" class="input form__input footer__input input--light" id="user-question-footer" placeholder="Я хочу спросить:">
+                    <input type="text" name="userQuestion" class="input form__input footer__input input--light" id="user-question" placeholder="Я хочу спросить:">
                 </div>
                 <!-- /.input-group footer__input-group -->
                 <div class="policy footer__policy">
-                    <input type="checkbox" name="policy__checkbox" id="policy__checkbox-footer" class="policy__checkbox" checked>
+                    <input type="checkbox" name="policyCheckbox" id="policy__checkbox-footer" class="policy__checkbox" checked>
                     <label for="policy__checkbox-footer" class="policy__label policy__label--center">Я соглашаюсь с обработкой данных</label>
                 </div>
                 <!-- /.policy -->
@@ -578,18 +495,20 @@
             <!-- /.footer-wrap -->
             <div class="footer__adress">
                 <div class="container">
-                    <div class="title title--primary footer__adress__title">
+                    <div class="title title--primary footer__adress__title" id="adress">
                     Ростов на дону, Торговый центр Plaza <br> Прямой телефон +7&nbsp;(999) 768 32 99
                 </div>
                 <!-- /.title title--primary -->
                 <div class="footer__social">
-                    <div class="footer__social__icon"><img src="img/footer-mail.svg" alt=""></div>
-                    <div class="footer__social__icon"><img src="img/footer-inst.svg" alt=""></div>
+                    <a href="mailto:jtcoolpix@mail.ru"><div class="footer__social__icon"><img src="img/footer-mail.svg" alt="">
+                    </div></a>
+                    <a href="https://www.instagram.com/ronycode/"><div class="footer__social__icon"><img src="img/footer-inst.svg" alt="">
+                    </div></a>
                 </div>
                 <!-- /.social footer__social -->
             </div>
             <div class="map footer__map">
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A772360a9e3661fcb0f68ebaa52acb64ce31a96ad8c65dc978959df964a05b84e&amp;width=925&amp;height=465&amp;lang=ru_RU&amp;scroll=true"></script>
+                
             </div>
             <!-- /footer map -->
                 </div>
@@ -599,19 +518,19 @@
                 <div class="container">
                             <div class="menu">
                         <div class="logo menu__logo wow fadeInLeft">
-                            Repair Design Project
+                           <a class="logo" href="#up">Repair Design Project</a>
                         </div>
                         <!-- /.logo -->
                         <nav class="nav nav__menu wow fadeInUp">
                             <a href="#" class="nav__item">Главная</a>
-                            <a href="#" class="nav__item">Проекты</a>
-                            <a href="#" class="nav__item">Замер</a>
-                            <a href="#" class="nav__item">Команда</a>
-                            <a href="#" class="nav__item">Отзывы</a>
-                            <a href="#" class="nav__item">Контакты</a> 
+                            <a href="#projects" class="nav__item">Проекты</a>
+                            <a href="#projects" class="nav__item">Замер</a>
+                            <a href="#design" class="nav__item">Команда</a>
+                            <a href="#down" class="nav__item">Отзывы</a>
+                            <a href="#adress" class="nav__item">Контакты</a> 
                         </nav>
                         <div class="contacts menu__contacts">
-                            <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
+                            <a href="tel:+79997683299" class="phone contacts__phone" id="down">+7 (999) 768-32-99</a>
                             <button class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
                         </div>
                         <!-- /.contacts menu__contacts -->
@@ -644,8 +563,8 @@
                     <input type="email" name="userEmail" class="input form__input modal__input input--light" id="user-email" placeholder="Ваш Email:">
                 </div>
                 <div class="policy modal__policy">
-                    <input type="checkbox" name="policy__checkbox" id="policy__checkbox-modal" class="policy__checkbox" checked>
-                    <label for="policy__checkbox-modal" class="policy__label">Я соглашаюсь с оработкой данных</label>
+                    <input type="checkbox" name="policyCheckbox" id="policy__checkbox-modal" class="policy__checkbox" checked>
+                    <label for="policy__checkbox-modal" class="policy__label">Я соглашаюсь с обработкой данных</label>
                 </div>
                 <!-- /.policy -->
                 <button class="button button--primary modal__button">отправить заявку</button> <!-- /.button button-primary button__modal -->

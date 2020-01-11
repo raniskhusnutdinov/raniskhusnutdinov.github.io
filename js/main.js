@@ -47,7 +47,8 @@
       userEmail: {
         required: true,
         email: true
-      }
+      },
+      policyCheckbox: "required",
       },
       messages: {
         userName: {
@@ -59,27 +60,18 @@
         userEmail: {
           required: "Заполните поле",
           email: "Введите в формате: name@domain.com"
-        }
+        },
+        policyCheckbox: "Согласитесь с обработкой персональных данных"
         
     },
-    submitHandler: function(form) {
-    // do other things for a valid form
-    $.ajax({
-      type: "POST",
-      url: "send.php",
-      data: $(form).serialize(),
-      success: function (response) {
-        console.log('Ajax сработал. Ответ сервера:  ' + response);
-        alert('Форма отправлена, мы перезвоним Вам в течении 10 минут');
-        $(form)[0].reset();
-        modal.removeClass('modal--visible');
-      },
-      error: function (response) {
-        console.error('Ошибка запроса ' + response);
-        
+      errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+          return element.next('label').append(error);
       }
-    });
-  }
+       error.insertAfter($(element));
+    },
+      
+    
   });
 
    //Валидация формы//
@@ -94,6 +86,7 @@
         maxlength: 15
       },
       userPhone: "required",
+      policyCheckbox: "required",
     },
       messages: {
         userName: {
@@ -101,9 +94,15 @@
           minlength: "Имя не короче двух букв",
           maxlength: "Имя не длиннее 15-ти букв"
         },
-        userPhone: "Телефон обязателен"
-      },
-    
+        userPhone: "Телефон обязателен",
+        policyCheckbox: "Согласитесь с обработкой персональных данных"
+    },
+      errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+          return element.next('label').append(error);
+      }
+       error.insertAfter($(element));
+    },
   });
   
   //маска для телефона
@@ -121,6 +120,7 @@
       },
       userPhone: "required",
       userQuestion: "required",
+      policyCheckbox: "required",
     },
       messages: {  
         userName: {
@@ -129,10 +129,46 @@
           maxlength: "Имя не длиннее 15-ти букв"
         },
         userPhone: "Телефон обязателен",
-        userQuestion: "Введите вопрос"
+        userQuestion: "Введите вопрос",
+        policyCheckbox: "Согласитесь с обработкой персональных данных"
       },
-    
+    errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+          return element.next('label').append(error);
+      }
+       error.insertAfter($(element));
+    },
   });
+
+  var isAddedMap = false;
+
+    $(window).scroll(function() {
+        var el = $('.map');
+        if ($(this).scrollTop() > el.offset().top - 800) {
+            if(isAddedMap) return;
+            isAddedMap = true;
+            var script = document.createElement('script');
+            script.src = "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A772360a9e3661fcb0f68ebaa52acb64ce31a96ad8c65dc978959df964a05b84e&amp;width=925&amp;height=465&amp;lang=ru_RU&amp;scroll=false";
+            el.append(script);
+        };
+    });
+  var player;
+  $('.video__play').on('click', function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '465',
+      width: '100%',
+      videoId: 'qSkUuFySwqE',
+      events: {
+        'onReady': videoPlay,
+      }
+    });
+  })
+
+  function videoPlay(event) {
+    event.target.playVideo();
+  }
+
+  
 
 });
 
