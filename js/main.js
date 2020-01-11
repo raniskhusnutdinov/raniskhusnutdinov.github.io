@@ -74,6 +74,9 @@
     
   });
 
+  $('[type=telephone]').mask('+7(000) 000 00 00', { placeholder: "Ваш номер телефона:" });
+  
+
    //Валидация формы//
   $('.control__form').validate({
     errorClass: "invalid",
@@ -106,7 +109,7 @@
   });
   
   //маска для телефона
-  $('[type=tel]').mask('+7(000) 000 00 00', {placeholder: "+7(___) ___-__-__"});
+  $('[type=tel]').mask('+7(000) 000 00 00', {placeholder: "Ваш номер телефона:"});
 
   $('.footer__form').validate({
     errorClass: "invalid",
@@ -148,16 +151,17 @@
             if(isAddedMap) return;
             isAddedMap = true;
             var script = document.createElement('script');
-            script.src = "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A772360a9e3661fcb0f68ebaa52acb64ce31a96ad8c65dc978959df964a05b84e&amp;width=925&amp;height=465&amp;lang=ru_RU&amp;scroll=false";
+            script.src = "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A772360a9e3661fcb0f68ebaa52acb64ce31a96ad8c65dc978959df964a05b84e&amp;width=700&amp;;lang=ru_RU&amp;scroll=false";
             el.append(script);
         };
     });
+  
   var player;
   $('.video__play').on('click', function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
-      height: '465',
+      height: '80%',
       width: '100%',
-      videoId: 'qSkUuFySwqE',
+      videoId: '9csXgTScFbk',
       events: {
         'onReady': videoPlay,
       }
@@ -168,7 +172,7 @@
     event.target.playVideo();
   }
 
-  
+
 
 });
 

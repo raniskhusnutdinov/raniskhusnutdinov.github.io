@@ -4,6 +4,9 @@
   .nav
     &__link
       margin-right: 1rem
+    &__item
+      &:hover
+        color: $light
   .contacts
     &__button
       margin: 0
@@ -54,13 +57,32 @@
       justify-content: flex-start
   .nav
     &__item
-      &:hover
-          color: $light
-
-@media screen and ( max-width: 750px )
-   .nav
       display: none
-  
+  .projects
+    justify-content: center
+    margin: 0
+    .section-title
+      text-align: center
+      &__text
+        margin: auto
+        margin-bottom: 2.57rem
+      &__word
+        display: flex
+        justify-content: center
+        &::after
+          content: none
+  .swiper-slide
+    display: flex
+    justify-content: center
+    &-imagine
+      min-width: 100%
+      min-height: 100%
+  .swiper-button-prev
+    margin-left: auto
+  .swiper-pagination
+    margin-left: 35%
+  .swiper-button-next
+    margin-left: auto
 
 @media screen and ( max-width: 570px )
   .container
@@ -76,15 +98,18 @@
     font-size: 1.64rem
   .hero
     height: 80vh
+    &__title
+      font-size: 2.3rem
+      min-width: 30rem
     &__scroll-down
       display: none
     &__content
       max-width: 24.14rem
     &__text
-      font-size: 1.28rem
+      font-size: 1.8rem
     &__button
       display: block
-      min-width: 24.14rem
+      min-width: 28.5rem
       margin-bottom: 1.85rem
     .section
       &-title
@@ -104,6 +129,7 @@
     margin-bottom: 0
   .footer
     background: $dark
+    padding-top: 0
     &__menu
       display: none
     &__wrap
@@ -121,11 +147,13 @@
         margin-top: 4rem
     &__map
       order: -1
+      height: 21.42rem
     &__button
       padding: 1.42rem
       min-width: 100%
   .projects
     margin: 0
+    margin-top: -4rem
     .section-title
       text-align: center
       &__text
@@ -136,6 +164,11 @@
         justify-content: center
         &::after
           content: none
+    .swiper-slide
+      display: flex
+      justify-content: center
+      &__text
+        margin-right: 0
   .control
     margin-bottom: -5rem
     padding: 60px 0 0 0
@@ -150,6 +183,17 @@
     &__policy__label
       margin-bottom: 4.42rem
       margin-top: -7rem
+  .swiper-button-prev
+    margin-left: auto
+  .swiper-pagination
+    margin-left: 30%
+  .swiper-button-next
+    margin-left: auto
+    
+  .logo
+    font-size: 12px
+  .phone
+    font-size: 12px
 @media screen and ( max-height: 530px )
   .hero
     &__scroll-down
